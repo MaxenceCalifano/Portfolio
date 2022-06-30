@@ -88,7 +88,7 @@
 .hr {
     border-top: 2px solid white;
     border-bottom: none;
-    margin-top: 5px;
+    margin: 0;
     border-color: #454545;
 }
 
