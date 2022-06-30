@@ -1,0 +1,14 @@
+.footer {
+    background-color: var(--card-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer.footer_light {
+    background-color: var(--main-color);
+}
+
+.footer * {
+    margin: 1em;
+}

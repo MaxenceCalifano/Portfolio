@@ -1,0 +1,53 @@
+.button {
+    width: 13rem;
+    background-color: none;
+    border: 2px solid #454545;
+    color: #454545;
+    font-size: 1rem;
+    position: relative;
+    transition: color 350ms;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.button.button_light {
+    border-color: white;
+}
+
+.button:hover {
+    color: #5093a0;
+}
+
+.button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-color: #454545;
+    transition: transform 300ms, color 250ms;
+    z-index: -1;
+}
+
+.button.button_light::after {
+    background-color: white;
+    color: var(--main-color);
+}
+
+.button:hover::after {
+    transform: translateX(0);
+}
+
+.contact_button {
+    color: var(--header-color);
+}
+
+.contact_button.contactButton_light {
+    color: white;
+}
+
+.contact_button.contactButton_light:hover {
+    color: var(--main-color);
+}

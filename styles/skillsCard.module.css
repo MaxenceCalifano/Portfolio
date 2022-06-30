@@ -1,0 +1,29 @@
+.card {
+    background-color: var(--card-color);
+    padding: 40px;
+    border-radius: 15px;
+    margin: 3% 0;
+}
+
+.card.card_light {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.card.card_light ul {
+    color: white;
+}
+
+.card ul {
+    list-style-type: none;
+    color: var(--main-color);
+    padding: 0;
+}
+
+.card {
+    color: var(--main-color);
+}
+
+.card ul li {
+    margin-top: 10px;
+}

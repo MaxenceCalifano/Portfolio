@@ -1,0 +1,33 @@
+.form {
+    background-color: rgb(34, 34, 34);
+    border-radius: var(--card-border-radius);
+    padding: 20px;
+    color: rgba(146, 202, 213, 0.9);
+    max-width: 450px;
+    margin: 3% auto;
+}
+
+.form.form_light {
+    background-color: var(--main-color);
+    color: white;
+}
+
+form.form_light input,
+.form.form_light textarea {
+    background-color: white;
+}
+
+.form input,
+.form textarea {
+    background-color: #454545;
+    border: none;
+    padding: 5px;
+    margin-top: 15px;
+    font-family: 'Quicksand';
+    width: 100%;
+    color: rgba(146, 202, 213, 0.9);
+}
+
+.form p {
+    font-weight: 600;
+}

@@ -1,8 +1,19 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap');*/
+
+:root {
+  --header-color: #5093a0;
+  --main-color: rgb(146, 202, 213);
+  --main-color-opacity: rgba(146, 202, 213, 0.6);
+  --background-color: #454545;
+  --card-color: rgb(34, 34, 34);
+  --card-border-radius: 15px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,4 +24,14 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
 }

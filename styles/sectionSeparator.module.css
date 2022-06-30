@@ -1,0 +1,14 @@
+.projectsHeader hr {
+    flex-grow: 2;
+    border-top: 0;
+}
+
+.projectsHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projectsHeader h3 {
+    margin: 0;
+}
