@@ -140,7 +140,7 @@
 
     .menu_button_container {
         cursor: pointer;
-        margin: 5px;
+        margin: 10px;
         height: 2rem;
         display: flex;
         align-items: center;

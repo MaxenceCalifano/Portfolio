@@ -70,7 +70,8 @@
 
 .project_tech_list {
     padding: 0;
-    display: inline;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project_tech_list li {
