@@ -109,6 +109,7 @@
         height: 100vh;
         transition: all ease-in-out 300ms;
         display: flex;
+        justify-content: flex-start;
         transform: scaleY(100%);
     }
 
