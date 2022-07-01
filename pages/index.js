@@ -89,6 +89,7 @@ export default function Home() {
                         tech_list={['HTML/CSS ', 'SASS ', 'Responsive/Mobile first']}
                         githubLink='https://github.com/MaxenceCalifano/OhMyFood'
                         demoLink='https://maxencecalifano.github.io/OhMyFood/'
+                        projectNumber="project3"
                         reverse>
             Un minuteur qui vous permet d&apos;appliquer la méthode de productivité Pomodoro. Dans ce projet j&apos;ai pu travail sur la gestion du temps
             en Javascript, gérer les états de l&apos;application avec Redux et créer des composants réutilisables avec ReactJS
@@ -100,7 +101,8 @@ export default function Home() {
                         title='Groupomania'
                         tech_list={['React', 'NodeJS', 'Express', 'MySQL']}
                         githubLink='https://github.com/MaxenceCalifano/Groupomania'
-                        demoLink='https://maxencecalifano.github.io/OhMyFood/'>
+                        demoLink='https://maxencecalifano.github.io/OhMyFood/'
+                        projectNumber="project4">
             Groupomania est un projet de réseau social pour entreprise, on y retrouve de nombreuses fonctionalités. L&apos;utilisateur y a la possibilité de créer un compte et de le modifier à sa guise
             , et de demander la réinitialisation du mot de passe si besoin. <br/>Une fois connécté il est possible de créer des posts et des commentaires et de les modifier et supprimer.
             </ProjectCard>

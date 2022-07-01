@@ -110,7 +110,7 @@
     }
 
     .project1 {
-        background-image: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.92)), url("/images/sans-titre-2.jpg");
+        background-image: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.92)), url("/images/Sans-titre-2.jpg");
     }
 
     .project2 {
@@ -118,11 +118,11 @@
     }
 
     .project3 {
-        background-image: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.92)), url("/images/sans-titre-2.jpg");
+        background-image: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.85)), url("/images/screen_pomodoro_timer.jpg");
     }
 
     .project4 {
-        background-image: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.92)), url("/images/sans-titre-2.jpg");
+        background-image: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.9)), url("/images/screen_groupomania.jpg");
     }
 
     .image {
