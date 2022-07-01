@@ -59,7 +59,7 @@ export default function Home() {
             <div ref={projectsRef} id="projects" className={styles.projects}>
             <ProjectCard width={724}
                         height={827} 
-                        imgSrc="/images/sans-titre-2.jpg"
+                        imgSrc="/images/Sans-titre-2.jpg"
                         title='OhMyFood!'
                         tech_list={['HTML/CSS ', 'SASS ', 'Responsive/Mobile first']}
                         githubLink='https://github.com/MaxenceCalifano/OhMyFood'
@@ -67,39 +67,42 @@ export default function Home() {
                         projectNumber="project1"
                         reverse>
                         Réalisation dans le cadre de ma formation développeur web d&apos;un site web responsive pour une application
-                        de réservation de repas en ligne. On y retrouve des animations CSS et j&apos;ai notament utilisé la méthodologie BEM et le préprocesseur SASS
+                        de réservation de repas en ligne. On y retrouve des animations CSS avancée et j&apos;ai notament utilisé la méthodologie BEM et le préprocesseur SASS
             </ProjectCard>
+
             <ProjectCard width={724}
                         height={827} 
                         imgSrc="/images/screen_react_calculator.jpg"
                         title='React Calculator'
-                        tech_list={['HTML/CSS ', 'SASS ', 'Responsive/Mobile first']}
-                        githubLink='https://github.com/MaxenceCalifano/OhMyFood'
-                        demoLink='https://maxencecalifano.github.io/OhMyFood/'
+                        tech_list={['HTML/CSS ', 'Javascript ', 'React']}
+                        githubLink='https://github.com/MaxenceCalifano/React-Calculator'
+                        demoLink='https://maxencecalifano.github.io/React-Calculator/'
                         projectNumber="project2">
-                        Une calculatrice permettant d&apos;effectuer les opérations basiques, réalisée en Javascript et à l&apos;aide de librairie ReactJS
+                        Une calculatrice permettant d&apos;effectuer les opérations basiques, réalisée en Javascript et à l&apos;aide de la librairie ReactJS
 
             </ProjectCard>
+
             <ProjectCard width={724}
                         height={827} 
                         imgSrc="/images/screen_pomodoro_timer.jpg"
-                        title='OhMyFood!'
+                        title='Pomodoro Timer'
                         tech_list={['HTML/CSS ', 'SASS ', 'Responsive/Mobile first']}
                         githubLink='https://github.com/MaxenceCalifano/OhMyFood'
                         demoLink='https://maxencecalifano.github.io/OhMyFood/'
                         reverse>
-            A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, 
-            and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+            Un minuteur qui vous permet d'appliquer la méthode de productivité Pomodoro. Dans ce projet j'ai pu travail sur la gestion du temps
+            en Javascript, gérer les états de l'application avec Redux et créer des composants réutilisables avec ReactJS
             </ProjectCard>
-            <ProjectCard width={724}
-                        height={827} 
-                        imgSrc="/images/sans-titre-2.jpg"
-                        title='OhMyFood!'
-                        tech_list={['HTML/CSS ', 'SASS ', 'Responsive/Mobile first']}
-                        githubLink='https://github.com/MaxenceCalifano/OhMyFood'
+
+            <ProjectCard width={752}
+                        height={850} 
+                        imgSrc="/images/screen_groupomania.jpg"
+                        title='Groupomania'
+                        tech_list={['React', 'NodeJS', 'Express', 'MySQL']}
+                        githubLink='https://github.com/MaxenceCalifano/Groupomania'
                         demoLink='https://maxencecalifano.github.io/OhMyFood/'>
-            A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, 
-            and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
+            Groupomania est un projet de réseau social pour entreprise, on y retrouve de nombreuses fonctionalités. L'utilisateur y a la possibilité de créer un compte et de le modifier à sa guise
+            , et de demander la réinitialisation du mot de passe si besoin. <br/>Une fois connécté il est possible de créer des posts et des commentaires et de les modifier et supprimer.
             </ProjectCard>
            
             </div>
