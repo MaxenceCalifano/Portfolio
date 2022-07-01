@@ -22,6 +22,12 @@
     display: inline;
 }
 
+.project_title hr {
+    width: 50%;
+    margin: 0.4rem 0;
+    border-top: 0;
+}
+
 .image {
     width: 40%;
     display: block;

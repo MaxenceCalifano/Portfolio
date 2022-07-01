@@ -32,7 +32,7 @@ export default function ProjectCard(props) {
     </a>
 </div>         
 <div className={styles.content}>
-    <h4 className={styles.project_title}>{props.title}</h4>
+    <h4 className={styles.project_title}>{props.title}<hr/></h4>
     <div className={`${styles.project_description} ${styles[props.projectNumber]} ${styles.project_descriptionReverse} `}>
         <p>{props.children}</p>
     </div>
@@ -63,7 +63,7 @@ export default function ProjectCard(props) {
             </a>
         {/* </div>  */}    
         <div className={styles.content}>
-            <h4 className={styles.project_title}>{props.title}</h4>
+            <h4 className={styles.project_title}>{props.title}<hr/></h4>
             <div className={`${styles.project_description} ${styles[props.projectNumber]}`}>
                 <p>{props.children}</p>
             </div>
