@@ -95,12 +95,25 @@
 }
 
 .project_title,
+.project_tech_list,
 .project_links {
     margin-left: 10px;
 }
 
 .project_links a {
     margin-right: 1rem;
+}
+
+@media (max-width: 1080px) {
+    .image {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .image {
+        margin-bottom: 10%;
+    }
 }
 
 @media (max-width: 576px) {
