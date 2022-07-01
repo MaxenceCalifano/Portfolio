@@ -19,6 +19,7 @@ export default function Home() {
 
   const {theme} = useContext(ThemeContext)
 
+  const topRef = useRef();
   const projectsRef = useRef();
   const skillsRef = useRef();
   const aboutRef = useRef();
@@ -39,9 +40,10 @@ export default function Home() {
       </Head>
       
     
-      <header className={theme ==='dark' ? styles.header : `${styles.header} ${styles.header_light}`}>
+      <header ref={topRef} className={theme ==='dark' ? styles.header : `${styles.header} ${styles.header_light}`}>
       <Navbar
            scrollTo={scrollTo} 
+           topRef={topRef}
            projectsRef={projectsRef} 
            skillsRef={skillsRef} 
            aboutRef={aboutRef} 

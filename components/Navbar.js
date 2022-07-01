@@ -1,8 +1,9 @@
 import styles from '../styles/navbar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon,faSun } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faMoon,faSun } from '@fortawesome/free-solid-svg-icons'
 import { useContext, useState } from 'react'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
+import Image from 'next/image'
 
 import { ThemeContext } from '../components/Themes/ThemeContext';
 
@@ -28,12 +29,14 @@ export default function Navbar(props) {
 
     return (  
                     <div className={`${styles.navbar} ${hideOnScroll ? styles.visible : styles.hidden}`}>
+                       
                         <input id='menu_toggle' type='checkbox' className={styles.menu_toggle} />
                         <label className={styles.menu_button_container}
                             htmlFor='menu_toggle'>
                             <div className={theme ==='dark' ? styles.menu_button : `${styles.menu_button} ${styles.menu_button_light}`}></div>
                         </label>
                         <ul className={theme ==='dark' ? styles.nav_links : `${styles.nav_links} ${styles.nav_links_light}`}>
+                            <li><span onClick={() => props.scrollTo(props.topRef)} style={{color: theme === 'dark' ? '#454545' : '#FFFF'}}> <FontAwesomeIcon icon={faHouse} title='dark mode' className={styles.moon_icon} /></span></li>
                             <li onClick={() => props.scrollTo(projectsRef)}  className={styles.nav_link}>Projets</li>
                             <li onClick={() => props.scrollTo(skillsRef)} className={styles.nav_link}>Skills</li>
                             <li onClick={() => props.scrollTo(aboutRef)} className={styles.nav_link}>A propos</li>

@@ -34,6 +34,11 @@
     margin-top: 0;
 }
 
+.nav_links li:first-child {
+    flex-grow: 2;
+    cursor: auto;
+}
+
 .nav_links li {
     text-decoration: none;
     display: inline;
