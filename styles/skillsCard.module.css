@@ -2,7 +2,7 @@
     background-color: var(--card-color);
     padding: 40px;
     border-radius: 15px;
-    margin: 3% 0;
+    margin: 3%;
 }
 
 .card.card_light {
