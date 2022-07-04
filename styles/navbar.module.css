@@ -144,6 +144,10 @@
         font-size: larger;
     }
 
+    .nav_links li:first-child {
+        flex-grow: 0;
+    }
+
     .menu_button_container {
         cursor: pointer;
         margin: 10px;
