@@ -18,18 +18,19 @@ export default function ProjectCard(props) {
         
 
 <div className={`${styles.image} ${styles.imageReverse}`}>
-   <a href={props.demoLink}>
-        <Image 
-        src={props.imgSrc}
-        width={width}
-        height={height}
-        layout='responsive'
-        sizes="50vw"
-        alt={`capture d'écran du projet ${props.title}`}
-        className={styles.project_image}
-        > 
-        </Image>
-    </a>
+        <a className={styles.image_container} href={props.demoLink}>
+                <Image 
+                src={props.imgSrc}
+                width={width}
+                height={height}
+                layout='responsive'
+                sizes="50vw"
+                alt={`capture d'écran du projet ${props.title}`}
+                className={styles.project_image}
+                > 
+                </Image>
+                <span className={styles.overlay}></span>
+            </a>
 </div>         
 <div className={styles.content}>
     <h4 className={styles.project_title}>{props.title}<hr/></h4>
@@ -48,8 +49,8 @@ export default function ProjectCard(props) {
         
         : <div className={theme ==='dark' ? `${styles.card}` : `${styles.card} ${styles.card_light} `}>
         
-        
-           <a className={styles.image} href={props.demoLink}>
+        <div className={styles.image}>
+           <a className={styles.image_container} /* className={styles.image}  */href={props.demoLink}>
                 <Image 
                 src={props.imgSrc}
                 width={width}
@@ -60,8 +61,9 @@ export default function ProjectCard(props) {
                 alt={`capture d'écran du projet ${props.title}`}
                 > 
                 </Image>
+                <span className={styles.overlay}></span>
             </a>
-        {/* </div>  */}    
+        </div>    
         <div className={styles.content}>
             <h4 className={styles.project_title}>{props.title}<hr/></h4>
             <div className={`${styles.project_description} ${styles[props.projectNumber]}`}>

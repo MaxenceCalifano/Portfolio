@@ -28,6 +28,27 @@
     border-top: 0;
 }
 
+.image_container {
+    display: grid;
+    grid-template-areas: "overlay";
+}
+
+.image_container>span {
+    grid-area: overlay;
+}
+
+.overlay {
+    background-color: var(--background-color);
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: opacity ease-in-out 300ms;
+
+}
+
+.overlay:hover {
+    opacity: 0;
+}
+
 .image {
     width: 40%;
     display: block;
