@@ -33,6 +33,17 @@
   margin: 1rem 0;
 }
 
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.socials hr {
+  flex-grow: 2;
+  border: 0;
+  height: 2px;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 1rem;

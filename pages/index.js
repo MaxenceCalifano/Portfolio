@@ -10,8 +10,8 @@ import Button from '../components/Button'
 import React from 'react'
 import { useRef, useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faJs, faNodeJs, faReact, faSass } from '@fortawesome/free-brands-svg-icons'
-import { faCode, faAngleDoubleRight, faCodeCompare, faDatabase, faServer,faMoon,faSun } from '@fortawesome/free-solid-svg-icons'
+import { faJs, faNodeJs, faReact, faSass, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faCode, faAngleDoubleRight, faCodeCompare, faDatabase, faServer, faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import { faFileCode } from '@fortawesome/free-regular-svg-icons'
 import Footer from '../components/footer'
 
@@ -53,12 +53,28 @@ export default function Home() {
         <h1>Maxence,<br/>Développeur Web</h1>
         <h2>Je construis des applications Web à l&apos;aide de React.JS, Node.JS, Express et MySQL</h2>
         <Button scrollTo={scrollTo} projectsRef={projectsRef}>Découvrir mes projets</Button>
+        <div className={styles.socials}>
+            <a href='https://github.com/MaxenceCalifano'><FontAwesomeIcon icon={faGithub}/></a>
+            <a href='https://www.linkedin.com/in/maxence-califano/'><FontAwesomeIcon icon={faLinkedin}/></a>
+            <hr style={theme === 'dark' ? {backgroundColor:"#454545"} : {backgroundColor:"white"}} focusable="false" aria-hidden="true"/>
+        </div>
       </header>
 
       <main className={theme ==='dark' ? `${styles.main}` : `${styles.main} ${styles.main_light}`}>
         <section>
           <SectionSeparator title="Mes projets"/>      
             <div ref={projectsRef} id="projects" className={styles.projects}>
+            <ProjectCard width={752}
+                        height={850} 
+                        imgSrc="/images/screen_groupomania.jpg"
+                        title='Groupomania'
+                        tech_list={['React', 'NodeJS', 'Express', 'MySQL']}
+                        githubLink='https://github.com/MaxenceCalifano/Groupomania'
+                        demoLink='https://maxencecalifano.github.io/OhMyFood/'
+                        projectNumber="project4">
+            Groupomania est un projet de réseau social pour entreprise, on y retrouve de nombreuses fonctionalités. L&apos;utilisateur y a la possibilité de créer un compte et de le modifier à sa guise
+            , et de demander la réinitialisation du mot de passe si besoin. <br/>Une fois connécté il est possible de créer des posts et des commentaires et de les modifier et supprimer.
+            </ProjectCard>
             <ProjectCard width={724}
                         height={827} 
                         imgSrc="/images/Sans-titre-2.jpg"
@@ -96,18 +112,6 @@ export default function Home() {
             Un minuteur qui vous permet d&apos;appliquer la méthode de productivité Pomodoro. Dans ce projet j&apos;ai pu travail sur la gestion du temps
             en Javascript, gérer les états de l&apos;application avec Redux et créer des composants réutilisables avec ReactJS
             </ProjectCard>
-
-            <ProjectCard width={752}
-                        height={850} 
-                        imgSrc="/images/screen_groupomania.jpg"
-                        title='Groupomania'
-                        tech_list={['React', 'NodeJS', 'Express', 'MySQL']}
-                        githubLink='https://github.com/MaxenceCalifano/Groupomania'
-                        demoLink='https://maxencecalifano.github.io/OhMyFood/'
-                        projectNumber="project4">
-            Groupomania est un projet de réseau social pour entreprise, on y retrouve de nombreuses fonctionalités. L&apos;utilisateur y a la possibilité de créer un compte et de le modifier à sa guise
-            , et de demander la réinitialisation du mot de passe si besoin. <br/>Une fois connécté il est possible de créer des posts et des commentaires et de les modifier et supprimer.
-            </ProjectCard>
            
             </div>
         </section>
@@ -136,12 +140,12 @@ export default function Home() {
            que j&apos;ai décidé de me reconvertir et d&apos;en faire mon métier. <br/> 
            Autodidacte pendant 3 ans puis diplômé de la formation développeur Web d’OpenClassRooms, je suis aujourd’hui notamment capable de : <br/>
            <ul>
-            <li>✅ Créer des interfaces utilisateur, en créant des composants réutilisables avec React</li>
-            <li>✅ Gérer les états de l’application avec Redux</li>
-            <li>✅ Intégrer une maquette de manière responsive en HTML/CSS/SASS</li>
-            <li>✅ Créer une API avec NodeJS / ExpressJS et réaliser les opérations CRUD</li>
-            <li>✅ Gérer un stockage de données MongoDB ou MySQL</li>
-            <li>✅ Versionner mon code et collaborer avec Git / Github</li>
+            <li><FontAwesomeIcon icon={faCircleCheck}/> Créer des interfaces utilisateur, en créant des composants réutilisables avec React</li>
+            <li><FontAwesomeIcon icon={faCircleCheck}/> Gérer les états de l’application avec Redux</li>
+            <li><FontAwesomeIcon icon={faCircleCheck}/> Intégrer une maquette de manière responsive en HTML/CSS/SASS</li>
+            <li><FontAwesomeIcon icon={faCircleCheck}/> Créer une API avec NodeJS / ExpressJS et réaliser les opérations CRUD</li>
+            <li><FontAwesomeIcon icon={faCircleCheck}/> Gérer un stockage de données MongoDB ou MySQL</li>
+            <li><FontAwesomeIcon icon={faCircleCheck}/> Versionner mon code et collaborer avec Git / Github</li>
            </ul>
             Contactez-moi pour me parler de votre projet 👋
            </p>
