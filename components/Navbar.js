@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faMoon,faSun } from '@fortawesome/free-solid-svg-icons'
 import { useContext, useState } from 'react'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
-import Image from 'next/image'
 
 import { ThemeContext } from '../components/Themes/ThemeContext';
 

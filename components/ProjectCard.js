@@ -74,8 +74,8 @@ export default function ProjectCard(props) {
                 {props.tech_list.map( i => <li key={i}>{i} </li>)}
             </ul>
             <div className={styles.project_links}>
-                <a href={props.githubLink}><FontAwesomeIcon icon={faArrowUpRightFromSquare} title="lien vers la demo du projet"/></a>
-                <a href={props.demoLink}>Demo</a>
+                <a href={props.githubLink}><FontAwesomeIcon icon={faGithub} title="lien vers le repo Github du projet"/></a>
+                <a href={props.demoLink}><FontAwesomeIcon icon={faArrowUpRightFromSquare} title="lien vers la demo du projet"/></a>
             </div>
         </div>
     </div>}

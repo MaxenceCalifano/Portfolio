@@ -104,9 +104,9 @@ export default function Home() {
                         height={827} 
                         imgSrc="/images/screen_pomodoro_timer.jpg"
                         title='Pomodoro Timer'
-                        tech_list={['HTML/CSS ', 'SASS ', 'Responsive/Mobile first']}
-                        githubLink='https://github.com/MaxenceCalifano/OhMyFood'
-                        demoLink='https://maxencecalifano.github.io/OhMyFood/'
+                        tech_list={['Redux', 'React ']}
+                        githubLink='https://github.com/MaxenceCalifano/Pomodoro-Timer'
+                        demoLink='https://maxencecalifano.github.io/Pomodoro-Timer/'
                         projectNumber="project3"
                         reverse>
             Un minuteur qui vous permet d&apos;appliquer la méthode de productivité Pomodoro. Dans ce projet j&apos;ai pu travail sur la gestion du temps
