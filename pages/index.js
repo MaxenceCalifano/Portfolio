@@ -85,7 +85,7 @@ export default function Home() {
                         projectNumber="project1"
                         reverse>
                         Réalisation dans le cadre de ma formation développeur web d&apos;un site web responsive pour une application
-                        de réservation de repas en ligne. On y retrouve des animations CSS avancée et j&apos;ai notament utilisé la méthodologie BEM et le préprocesseur SASS
+                        de réservation de repas en ligne. On y retrouve des animations CSS avancées et j&apos;ai notamment utilisé la méthodologie BEM et le préprocesseur SASS.
             </ProjectCard>
 
             <ProjectCard width={724}
@@ -96,7 +96,7 @@ export default function Home() {
                         githubLink='https://github.com/MaxenceCalifano/React-Calculator'
                         demoLink='https://maxencecalifano.github.io/React-Calculator/'
                         projectNumber="project2">
-                        Une calculatrice permettant d&apos;effectuer les opérations basiques, réalisée en Javascript et à l&apos;aide de la librairie ReactJS
+                        Une calculatrice permettant d&apos;effectuer les opérations basiques, réalisée en Javascript et à l&apos;aide de la librairie ReactJS.
 
             </ProjectCard>
 
@@ -109,8 +109,8 @@ export default function Home() {
                         demoLink='https://maxencecalifano.github.io/Pomodoro-Timer/'
                         projectNumber="project3"
                         reverse>
-            Un minuteur qui vous permet d&apos;appliquer la méthode de productivité Pomodoro. Dans ce projet j&apos;ai pu travail sur la gestion du temps
-            en Javascript, gérer les états de l&apos;application avec Redux et créer des composants réutilisables avec ReactJS
+            Un minuteur qui vous permet d&apos;appliquer la méthode de productivité Pomodoro. Dans ce projet j&apos;ai pu travaillé sur la gestion du temps
+            en Javascript, gérer les états de l&apos;application avec Redux et créer des composants réutilisables avec ReactJS.
             </ProjectCard>
            
             </div>
@@ -136,7 +136,7 @@ export default function Home() {
         </section>
         <section ref={aboutRef}  className={theme ==='dark' ? styles.about : `${styles.about} ${styles.about_light}`} >
           <SectionSeparator title='A propos'/>
-          <p>J&apos;ai découvert par hasard le déeloppement web en créant un site pour un projet personnel, j&apos;ai tellement aimé
+          <p>J&apos;ai découvert par hasard le développement web en créant un site pour un projet personnel, j&apos;ai tellement aimé
            que j&apos;ai décidé de me reconvertir et d&apos;en faire mon métier. <br/> 
            Autodidacte pendant 3 ans puis diplômé de la formation développeur Web d’OpenClassRooms, je suis aujourd’hui notamment capable de : <br/>
            <ul>

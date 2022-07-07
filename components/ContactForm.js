@@ -34,7 +34,7 @@ const ContactForm = () => {
       className={theme ==='dark' ? styles.form : `${styles.form} ${styles.form_light}`}
     >
       <div>
-        <p className={styles.title}>Parlez moi de votre projet :</p>
+        <p className={styles.title}>Parlez-moi de votre projet :</p>
         <input type="text" placeholder="Votre nom" name="name" required />
       </div>
       <div>
